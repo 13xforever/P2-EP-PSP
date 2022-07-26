@@ -1,0 +1,19 @@
+[package]
+name = "patcher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+flate2 = { version = "1.0.17" }
+xdelta3 = "0.1.5"
+byteorder = "1"
+cty = "0.2.2"
+chrono = "0.4"
+
+[build-dependencies]
+cc = "1.0"
+
+[profile.release]
+lto = true
